@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    font-size:35px;
+    font-weight: 900; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:30vh ;
+    margin: 0 auto;
+    justify-content: center;
+}
+.word1{
+    background-image:url("winter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20%;
+    color: white;
+    display: flex;
+}
+.word2{
+    background-image:url("Spring.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20%;
+    color: white;
+   
+}
+.word3{
+    background-image:url("summer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20%;
+    color: white;
+}
+.word4{
+    background-image:url("autumn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20%;
+    color: white;
+}
+.word1 h1{
+    animation: move 3s infinite linear;
+}
+.word2 h1{
+    animation: opacity 3s infinite linear;
+}
+.word3 h1{
+    animation: rotate 3s infinite linear;
+}
+.word4 h1{
+    animation: scale 3s infinite linear;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(50px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-50px); 
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+@keyframes scale{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
